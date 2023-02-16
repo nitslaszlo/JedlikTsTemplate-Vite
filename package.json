@@ -5,11 +5,11 @@
   "main": "vite.config.js",
   "scripts": {
     "dev": "vite",
-    "debug": "vite --debug --inspect-brk",
+    "debug": "vite --debug",
     "build": "vite build"
   },
   "dependencies": {
-    "tslib": "^2.5.0",
+    "tslib": "^2.5.0"
   },
   "devDependencies": {
     "@types/node": "^18.13.0",

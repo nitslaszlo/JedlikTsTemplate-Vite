@@ -45,12 +45,19 @@ const requestListener: http.RequestListener = (req, res) => {
   res.write(
     `<label>Kérem a korod: <input type='number' name='kor' value=${korod} style='max-width:100px;' onChange='this.form.submit();'></label>\n`
   );
-  res.write(`Te ${korod} éves vagy!\n`);
+  res.write(`Te ${korod} éves vagy????\n`);
 
   // <---- Fejezd be a kódolást
 
   res.write("</pre></form></body></html>");
   res.end();
 };
+
+// if (import.meta.env.PROD) {
+//   const server = http.createServer(requestListener);
+//   server.listen(3000, () => {
+//     console.log('Server is running on http://localhost:3000');
+//   });
+// }
 
 export const viteNodeApp = requestListener;

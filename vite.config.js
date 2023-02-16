@@ -6,7 +6,12 @@ export default defineConfig({
     format: "cjs",
   },
   server: {
-    port: 3699,
+    port: 8080,
+    open: true,
+    hmr: true, 
+  },
+  build: {
+    sourcemap: true,
   },
   plugins: [
     ...VitePluginNode({
