@@ -1,0 +1,28 @@
+{
+  "name": "vanilia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vite.config.js",
+  "scripts": {
+    "dev": "vite",
+    "debug": "vite --debug --inspect-brk",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "tslib": "^2.5.0",
+  },
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "vite": "^4.1.1",
+    "vite-plugin-node": "^3.0.2",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
+  },
+  "author": "",
+  "license": "ISC"
+}
