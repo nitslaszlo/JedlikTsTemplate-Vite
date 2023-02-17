@@ -5,9 +5,10 @@
   "main": "vite.config.js",
   "scripts": {
     "dev": "vite",
-    "debug": "vite --debug",
+    "dev_debug": "vite --debug",
     "build": "vite build",
-    "serve": "vite serve"
+    "debug": "nodemon",
+    "inspect": "node --inspect ./dist/app.js"
   },
   "dependencies": {
     "tslib": "^2.5.0"
@@ -19,10 +20,11 @@
     "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "vite": "^4.1.1",
-    "vite-plugin-node": "^3.0.2",
+    "nodemon": "^2.0.20",
     "prettier": "^2.8.4",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "vite": "^4.1.1",
+    "vite-plugin-node": "^3.0.2"
   },
   "author": "",
   "license": "ISC"

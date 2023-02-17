@@ -8,12 +8,10 @@ export default defineConfig({
   server: {
     port: 8080,
     open: true,
-    sourcemap: true,
     watch: true,
   },
   build: {
     sourcemap: true,
-    watch: true,
   },
   plugins: [
     ...VitePluginNode({
