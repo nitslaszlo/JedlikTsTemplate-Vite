@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "debug": "vite --debug",
-    "build": "vite build"
+    "build": "vite build",
+    "serve": "vite serve"
   },
   "dependencies": {
     "tslib": "^2.5.0"

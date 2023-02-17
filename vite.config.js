@@ -8,15 +8,18 @@ export default defineConfig({
   server: {
     port: 8080,
     open: true,
-    hmr: true, 
+    sourcemap: true,
+    watch: true,
   },
   build: {
     sourcemap: true,
+    watch: true,
   },
   plugins: [
     ...VitePluginNode({
       adapter: "express",
       appPath: "./src/app.ts",
+      sourcemap: true,
     }),
   ],
 });
