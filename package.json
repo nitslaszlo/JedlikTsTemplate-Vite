@@ -4,7 +4,7 @@
     "description": "",
     "main": "vite.config.js",
     "scripts": {
-        "dev": "vite --debug",
+        "dev": "vite",
         "build": "vite build",
         "test": "jest || ECHO."
     },
