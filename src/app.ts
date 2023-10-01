@@ -3,13 +3,14 @@ import url from "url";
 import fs from "fs";
 
 const requestListener: http.RequestListener = (req: http.IncomingMessage, res: http.ServerResponse) => {
-    res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
     // favicon.ico kérés kiszolgálása:
     if (req.url === "/favicon.ico") {
         res.writeHead(200, { "Content-Type": "image/x-icon" });
         fs.createReadStream("favicon.ico").pipe(res);
         return;
     }
+
+    res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
     res.write("<!DOCTYPE html>");
     res.write("<html lang='hu'>");
     res.write("<head>");
@@ -36,7 +37,7 @@ const requestListener: http.RequestListener = (req: http.IncomingMessage, res: h
     if (isNaN(korod)) korod = 18;
 
     res.write(`<label>Kérem a korod: <input type=z'number' name='kor' value=${korod} style='max-width:100px;' onChange='this.form.submit();'></label>\n`);
-    res.write(`Te ${korod} vagy:?\n`);
+    res.write(`Te ${korod} vagy:!\n`);
 
     // <---- Fejezd be a kódolást
 
