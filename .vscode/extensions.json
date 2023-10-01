@@ -8,6 +8,7 @@
         "eamodio.gitlens",
         "formulahendry.auto-close-tag",
         "christian-kohler.path-intellisense",
-        "teledemic.branch-warnings"
+        "teledemic.branch-warnings",
+        "zixuanchen.vitest-explorer"
     ]
 }

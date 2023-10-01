@@ -1,3 +1,5 @@
+import { expect, test } from "vitest";
+
 test("hello world", () => {
     const str = "Hello, WORLD!";
     expect(typeof str).toBe("string");
