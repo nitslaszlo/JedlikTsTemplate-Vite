@@ -36,5 +36,8 @@
     },
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "terminal.integrated.env.windows": {
+        "NODE_OPTIONS": "--max-old-space-size=8192"
     }
 }
